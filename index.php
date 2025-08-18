@@ -41,3 +41,86 @@
     echo PI;
     echo "<br>";
 ?>
+
+<?php
+    //control structures
+    // if, else, elseif
+
+    $a = 1;
+    $b = 2;
+    if($a > $b) {
+        // instruction
+        echo "a is greater than b";
+    } elseif($a < $b) {
+        // instruction
+        echo "a is less than b";
+    } else {
+        // instruction
+        echo "a is equal to b";
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $a = 1;
+    $b = 2;
+
+    ?>
+    <p>I'm going to comppare <?php echo $a; ?> and <?php echo $b; ?></p>
+    <br>
+    <?php if ($a > $b)?>
+    <p><?php echo $a; ?> is greater than <?php echo $b; ?></p>
+    <?php elseif ($a < $b){?>
+        <ul>
+            <li>
+                list 1
+            </li>
+            <li>
+                list 2
+            </li>
+            <li>
+                list 3
+            </li>
+        </ul>
+        <?php }else{ ?>
+            <ul>
+                <li>
+                    list 4
+                </li>
+                <li>
+                    list 5
+                </li>
+            </ul>
+            <?php }?>
+
+            <?php elseif ($a < $b)：?>
+        <ul>
+            <li>
+                list 1
+            </li>
+            <li>
+                list 2
+            </li>
+            <li>
+                list 3
+            </li>
+        </ul>
+        <?php else ?>
+            <ul>
+                <li>
+                    list 4
+                </li>
+                <li>
+                    list 5
+                </li>
+            </ul>
+            <?php endif;?>
+</body>
+</html>
