@@ -75,9 +75,9 @@
     ?>
     <p>I'm going to comppare <?php echo $a; ?> and <?php echo $b; ?></p>
     <br>
-    <?php if ($a > $b)?>
-    <p><?php echo $a; ?> is greater than <?php echo $b; ?></p>
-    <?php elseif ($a < $b){?>
+    <!-- <?php if ($a > $b)?>
+    <p><?php echo $a; ?> is greater than <?php echo $b; ?></p> -->
+    <?php if ($a < $b){?>
         <ul>
             <li>
                 list 1
@@ -100,7 +100,7 @@
             </ul>
             <?php }?>
 
-            <?php elseif ($a < $b)：?>
+            <?php if ($a > $b): ?>
         <ul>
             <li>
                 list 1
@@ -112,7 +112,7 @@
                 list 3
             </li>
         </ul>
-        <?php else ?>
+        <?php else: ?>
             <ul>
                 <li>
                     list 4
